@@ -66,9 +66,9 @@ def process_message(text, s_pos, m_pos, f_pos, st2_pos, st1_pos):
 # ==============================================================================
 # STREAMLIT USER INTERFACE
 # ==============================================================================
-st.set_page_config(page_title="Typex Mark II Simulator", page_icon="🔒", layout="centered")
+st.set_page_config(page_title="Typex Mark II", page_icon="🔒", layout="centered")
 
-st.title("🔒 Typex Mark II Simulator")
+st.title("🔒 Typex Mark II")
 st.write("An extended ASCII replica of the iconic British WW2 cipher machine.")
 st.markdown("---")
 
@@ -86,7 +86,6 @@ st.markdown("---")
 
 ### 2. Text Input Area
 st.subheader("📝 Message Processing")
-mode = st.radio("Select Operation Mode:", ["Encrypt / Decrypt"])
 input_text = st.text_area("Enter your text here:", value="Typex web app is live! Try sharing a secret code.")
 
 # Process text automatically when the user types
